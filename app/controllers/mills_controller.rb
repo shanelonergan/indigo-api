@@ -1,0 +1,2 @@
+class MillsController < ApplicationController
+end

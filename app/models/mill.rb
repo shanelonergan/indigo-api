@@ -1,0 +1,2 @@
+class Mill < ApplicationRecord
+end

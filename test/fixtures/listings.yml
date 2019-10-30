@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  original_price: 1.5
+  current_price: 1.5
+  description: MyString
+  waist: 1
+  length: 1
+  weight: 1
+  wash_id: 
+  mill_id: 
+  category_id: 
+  origin_id: 
+  brand_id: 
+  condition_id: 
+
+two:
+  original_price: 1.5
+  current_price: 1.5
+  description: MyString
+  waist: 1
+  length: 1
+  weight: 1
+  wash_id: 
+  mill_id: 
+  category_id: 
+  origin_id: 
+  brand_id: 
+  condition_id: 

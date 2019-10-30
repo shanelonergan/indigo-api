@@ -1,0 +1,2 @@
+class WashesController < ApplicationController
+end

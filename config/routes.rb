@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :conditions
+  resources :brands
+  resources :origins
+  resources :categories
+  resources :mills
+  resources :washes
+  resources :listings
   resources :transactions
   resources :favorites
   resources :users
