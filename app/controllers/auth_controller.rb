@@ -1,16 +1,8 @@
-class UsersController < ApplicationController
+class AuthController < ApplicationController
 
-    def index
-        render json: User.all
-    end
-
-    def show
-        render json: User.find(params[:id])
-    end
-
-    def create
-        user = User.create(user_params)
-        if user.valid?
+    def login
+        user = User.find_by(username: user_params[:username])
+        if user && user.authenticate(user_params[:password])
             payload = {user_id: user.id}
             token = JWT.encode(payload, secret, true, {alogorithm: 'HS256'})
             render json: {user: user. token: token}
@@ -18,6 +10,9 @@ class UsersController < ApplicationController
             render json: {errors: user.errors.full_messages}
         end
     end
+
+   def persist
+   end
 
     private
 
