@@ -9,10 +9,11 @@ class UsersController < ApplicationController
     end
 
     def create
+        # byebug
         user = User.create(user_params)
         if user.valid?
             payload = {user_id: user.id}
-            token = JWT.encode(payload, secret, true, {alogorithm: 'HS256'})
+            token = JWT.encode(payload, secret, 'HS256')
             render json: {user: user, token: token}
         else
             render json: {errors: user.errors.full_messages}
@@ -22,6 +23,6 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.permit(:username, :password, :bio, :email)
+        params.permit(:username, :password)
     end
 end
