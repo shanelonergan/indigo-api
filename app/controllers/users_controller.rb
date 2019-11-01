@@ -13,7 +13,7 @@ class UsersController < ApplicationController
         if user.valid?
             payload = {user_id: user.id}
             token = JWT.encode(payload, secret, true, {alogorithm: 'HS256'})
-            render json: {user: user. token: token}
+            render json: {user: user, token: token}
         else
             render json: {errors: user.errors.full_messages}
         end

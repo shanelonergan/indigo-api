@@ -21,7 +21,7 @@ apc = Brand.create(
     year_founded: 1987
 )
 
-3sixteen = Brand.create(
+threesixteen = Brand.create(
     name: "3sixteen",
     location: "USA",
     bio: "Bio here",
@@ -102,38 +102,38 @@ bleach = Wash.create(name: "bleach wash")
 # <== Users ==>
 
 shane = User.create(
-    name: "Shane"
-    email: "sptlonergan@gmail.com"
+    username: "Shane",
+    email: "sptlonergan@gmail.com",
     location: "New York"
 )
 
 sukrit = User.create(
-    name: "Sukrit"
-    email: "sukrit@gmail.com"
+    username: "Sukrit",
+    email: "sukrit@gmail.com",
     location: "New York"
 )
 
 matt = User.create(
-    name: "Matt"
-    email: "matt@gmail.com"
+    username: "Matt",
+    email: "matt@gmail.com",
     location: "New York"
 )
 
 evan = User.create(
-    name: "Evan"
-    email: "evanlon92@gmail.com"
+    username: "Evan",
+    email: "evanlon92@gmail.com",
     location: "New York"
 )
 
 quinn = User.create(
-    name: "Quinn"
-    email: "sptlonergan@gmail.com"
+    username: "Quinn",
+    email: "sptlonergan@gmail.com",
     location: "New York"
 )
 
 amy = User.create(
-    name: "Amy"
-    email: "aroweintraub@gmail.com"
+    username: "Amy",
+    email: "aroweintraub@gmail.com",
     location: "New York"
 )
 
