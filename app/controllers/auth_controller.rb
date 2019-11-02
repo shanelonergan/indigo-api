@@ -5,7 +5,7 @@ class AuthController < ApplicationController
         if user && user.authenticate(user_params[:password])
             payload = {user_id: user.id}
             token = JWT.encode(payload, secret, 'HS256')
-            render json: {user: user. token: token}
+            render json: {user: user, token: token}
         else
             render json: {errors: user.errors.full_messages}
         end
@@ -15,9 +15,9 @@ class AuthController < ApplicationController
         auth = request.headers["Authorization"]
         if auth
             token = auth.split(" ")[1]
-            decoded_token = JWT.decode(payload, secret, true, {alogorithm: 'HS256'})
+            decoded_token = JWT.decode(token, secret, true, {alogorithm: 'HS256'})
 
-            user.find(decoded_token[0]['user_id'])
+            user = User.find(decoded_token[0]['user_id'])
             render json: user
         end
     end
