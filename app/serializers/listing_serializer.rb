@@ -1,5 +1,5 @@
 class ListingSerializer < ActiveModel::Serializer
-  attributes :id, :name, :brand, :category, :wash, :mill, :condition, :waist, :length, :weight
+  attributes :id, :name, :brand, :category, :wash, :mill, :condition, :waist, :length, :weight, :price
 
   def brand
     {name: self.object.brand.name, id: self.object.brand.id}

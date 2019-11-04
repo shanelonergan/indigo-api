@@ -24,6 +24,7 @@ class ListingsController < ApplicationController
             :weight,
             :wash_id,
             :mill_id,
-            :condition_id)
+            :condition_id,
+            :price)
     end
 end
