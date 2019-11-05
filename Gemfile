@@ -44,3 +44,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'active_model_serializers'
 
 gem 'stripe'
+
+gem "dotenv-rails", groups: [:development, :test]
+gem 'rest-client'
