@@ -1,4 +1,9 @@
 class ListingsController < ApplicationController
+    def show
+        listing = Listing.find(params[:id])
+        render json: listing
+    end
+
     def create
         listing = Listing.create(listing_params)
         if listing.valid?
