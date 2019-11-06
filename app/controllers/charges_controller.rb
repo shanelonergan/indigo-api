@@ -1,10 +1,13 @@
 require 'stripe'
+require 'dotenv'
+Dotenv.load
 
 class ChargesController < ApplicationController
 
     def create
 
         Stripe.api_key = ENV['STRIPE_SECRET_KEY']
+        key = ENV['STRIPE_SECRET_KEY']
 
         # byebug
 
