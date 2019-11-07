@@ -22,7 +22,7 @@ class ListingSerializer < ActiveModel::Serializer
   end
 
   def user
-    {name: self.object.user.username, id: self.object.user.id, location: self.object.user.location}
+    {username: self.object.user.username, id: self.object.user.id, location: self.object.user.location, img_url: self.object.user.img_url}
   end
 
 end
