@@ -7,7 +7,6 @@ class ChargesController < ApplicationController
     def create
 
         Stripe.api_key = ENV['STRIPE_SECRET_KEY']
-        key = ENV['STRIPE_SECRET_KEY']
 
         # byebug
 
@@ -24,6 +23,8 @@ class ChargesController < ApplicationController
             success_url: 'https://example.com/success?session_id={CHECKOUT_SESSION_ID}',
             cancel_url: 'https://example.com/cancel',
           )
+
+          render json: session
     end
 
 end
