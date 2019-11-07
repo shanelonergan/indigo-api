@@ -1,5 +1,5 @@
 class ListingSerializer < ActiveModel::Serializer
-  attributes :id, :name, :brand, :category, :wash, :mill, :condition, :waist, :length, :weight, :price
+  attributes :id, :name, :brand, :category, :wash, :mill, :condition, :waist, :length, :weight, :price, :user
 
   def brand
     {name: self.object.brand.name, id: self.object.brand.id}
@@ -19,6 +19,10 @@ class ListingSerializer < ActiveModel::Serializer
 
   def condition
     {name: self.object.condition.name, id: self.object.condition.id}
+  end
+
+  def user
+    {name: self.object.user.username, id: self.object.user.id, location: self.object.user.location}
   end
 
 end
