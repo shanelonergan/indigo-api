@@ -6,6 +6,7 @@ class ListingsController < ApplicationController
 
     def create
         listing = Listing.create(listing_params)
+        # byebug
         if listing.valid?
             render json: listing
         else
@@ -30,6 +31,8 @@ class ListingsController < ApplicationController
             :wash_id,
             :mill_id,
             :condition_id,
-            :price)
+            :price,
+            :user_id
+        )
     end
 end
