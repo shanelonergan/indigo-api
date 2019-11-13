@@ -1,5 +1,5 @@
 class ListingSerializer < ActiveModel::Serializer
-  attributes :id, :name, :brand, :category, :wash, :mill, :condition, :waist, :length, :weight, :price, :user
+  attributes :id, :name, :brand, :category, :wash, :mill, :condition, :waist, :length, :weight, :price, :user, :favorites
 
   def brand
     {name: self.object.brand.name, id: self.object.brand.id}
@@ -23,6 +23,10 @@ class ListingSerializer < ActiveModel::Serializer
 
   def user
     {username: self.object.user.username, id: self.object.user.id, location: self.object.user.location, img_url: self.object.user.img_url}
+  end
+
+  def favorites
+    {count: self.object.favorites.length}
   end
 
 end
