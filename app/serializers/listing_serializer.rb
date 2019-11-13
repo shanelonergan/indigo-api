@@ -26,7 +26,7 @@ class ListingSerializer < ActiveModel::Serializer
   end
 
   def favorites
-    {count: self.object.favorites.length}
+    {count: self.object.favorites.length, all: self.object.favorites}
   end
 
 end
