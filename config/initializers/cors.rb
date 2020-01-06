@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'indigo-resale.store'
+    origins 'https://indigo-resale.store, https://indigo-deployment.netlify.com'
 
     resource '*',
       headers: :any,
