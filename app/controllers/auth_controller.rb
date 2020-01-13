@@ -27,7 +27,7 @@ class AuthController < ApplicationController
     private
 
     def user_params
-        params.permit(:username, :password, :bio, :email)
+        params.permit(:username, :password, :bio, :email, :auth)
     end
 
     def hmac_secret
