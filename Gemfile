@@ -46,5 +46,8 @@ gem 'active_model_serializers'
 
 gem 'stripe'
 
-gem "dotenv-rails", groups: [:development, :test]
+group :development, :test do
+  gem 'dotenv-rails'
+end
+
 gem 'rest-client'
