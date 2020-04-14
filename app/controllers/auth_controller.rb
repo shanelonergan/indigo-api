@@ -31,6 +31,6 @@ class AuthController < ApplicationController
     end
 
     def hmac_secret
-        ENV['JWT_SECRET KEY']
+        ENV['JWT_SECRET_KEY']
     end
 end
