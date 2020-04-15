@@ -13,11 +13,6 @@ class FavoritesController < ApplicationController
         end
     end
 
-    def destroy
-        favorite = Favorite.find_by(user_id: favorite_params[:user_id], listing_id[:listing_id])
-        favorite.destroy
-    end
-
     private
 
     def favorite_params
