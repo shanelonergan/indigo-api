@@ -10,7 +10,7 @@ Inspired by applications like Grailed and Poshmark, Indigo aims to cater exclusi
 
 ## Build Status
 
-## Code Style
+[![Netlify Status](https://api.netlify.com/api/v1/badges/398cc6de-3a0b-4275-9a76-2dba030a0d30/deploy-status)](https://app.netlify.com/sites/indigo-deployment/deploys) ![Heroku](https://heroku-badge.herokuapp.com/?app=indigo-api-deployment&root=/users)
 
 ## Screenshots
 
@@ -50,53 +50,57 @@ Inspired by applications like Grailed and Poshmark, Indigo aims to cater exclusi
 
 ### Stripe API
 
-Indigo utilizes the Stripe API to securely handle payment processing. It is integrated using [Stripe-Checkout-React](link). A walkthrough of the relevant code can be found below:
+Indigo utilizes the Stripe API to securely handle payment processing. It is integrated using [Stripe-Checkout-React](link). A walk-through of the relevant code can be found below:
 
-```javascript
-// indigo/src/Routes.js
+```ruby
+# indigo-api/app/controllers/charges_controller.rb
 
-import React from 'react'
-import { StripeProvider, Elements } from 'react-stripe-elements'
+require 'stripe'
+require 'dotenv'
+Dotenv.load
 
-...
+class ChargesController < ApplicationController
 
-const renderListingContainer = () => {
-    return (
-        <StripeProvider apiKey="pk_test_LEfFcUQR5pRWI12plUR9V4Rq00MrKBR0Bg">
-            <Elements>
-                <ListingContainer/>
-            </Elements>
-        </StripeProvider>
-    )
-}
-```
+    def create
 
-```javascript
-import StripeCheckout from 'react-stripe-checkout';
+      begin
 
-...
+        Stripe.api_key = ENV['STRIPE_SECRET_KEY']
+        token = params[:charge][:token]
+        price = params[:price]
 
-<Box direction='row' align='center' alignSelf='center'>
-    <StripeCheckout
-        stripeKey='pk_test_LEfFcUQR5pRWI12plUR9V4Rq00MrKBR0Bg'
-        amount={listing.price * 100} // stripe price is in cents
-        currency='USD'
-        token={onToken}
-        panelLabel='Purchase for {{amount}}'
-        ComponentClass='div'
-        name='indigo'
-        shippingAddress
-    >
-        <Button
-            icon={<Stripe />}
-            label='Purchase'
-            margin={{ right: 'medium' }}
+        charge = Stripe::Charge.create({
+          amount: price * 100,
+          currency: 'usd',
+          description: 'Example charge',
+          source: token,
+        })
 
-            color='brand'
-            primary
-        />
-    </StripeCheckout>
-</Box>
+        render json: charge
+
+      rescue Stripe::CardError => e
+        puts "Status is: #{e.http_status}"
+        puts "Type is: #{e.error.type}"
+        puts "Charge ID is: #{e.error.charge}"
+
+      rescue Stripe::InvalidRequestError => e
+        render json: e
+
+      rescue Stripe::AuthenticationError => e
+        render json: e
+
+      rescue Stripe::APIConnectionError => e
+        render json: e
+
+      rescue Stripe::StripeError => e
+        render json: e
+
+      rescue => e
+        render json: e
+
+      end
+    end
+end
 ```
 
 ## Installation
@@ -104,12 +108,26 @@ import StripeCheckout from 'react-stripe-checkout';
 Clone the repo and CD inside the directory
 
 1. Clone repo and CD into the directory
-2. run `bundle install` to install necessary dependancies
-3. run `rails db:create` to create your Postgres database
+2. run `bundle install` to install necessary dependencies
+3. run `rails db:create` to create your PostgreSQL database
 4. run `rails db:migrate` to bring up migrations
-5. run `rails db:seed` to seed data for shops and items
+5. run `rails db:seed` to seed sample data
 6. run `rails s` to start the server
 
 **Note:** if you are running the front-end together with the API, it is recommended that you start the Rails server first, then the NPM server. This will prompt you as to whether you want to run the NPM server on port 3001, to which you should respond yes.
 
 Make sure to visit the repo for the front-end and follow those instructions as well.
+
+## Contributing
+
+Pull requests are always welcome! Please make sure that your PR is [well-scoped](https://www.netlify.com/blog/2020/03/31/how-to-scope-down-prs/).
+
+<table>
+  <tr>
+    <td align="center"><a href="http://shanelonergan.dev/"><img src="https://avatars2.githubusercontent.com/u/52255508?s=400&u=ca705fb2292c36027735a9b012b720a0ce869649&v=4" width="200px;" alt=""/><br /><sub><b>Shane Lonergan</b></sub></a><br /><a href="https://github.com/shanelonergan/indigo/commits?author=shanelonergan" title="Code">💻</a> <a href="#infra-sruti" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/sruti/covid19-riskfactors-app/issues/created_by/sruti https://github.com/shanelonergan/indigo/issues/created_by/shanelonergan" title="Bug reports">🐛</a><a href="#ideas-sruti" title="Ideas, Planning, & Feedback">💡</a></td>
+    </tr>
+</table>
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/) © [Shane Lonergan](https://github.com/shanelonergan/)
