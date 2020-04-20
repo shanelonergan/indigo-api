@@ -18,12 +18,12 @@ Inspired by applications like Grailed and Poshmark, Indigo aims to cater exclusi
 
 ## Screenshots
 
-![screenshot of Indigo's home page, part 1](./public/indigo-home-1.png 'home page 1')
-![screenshot of Indigo's home page, part 1](./public/indigo-home-2.png 'home page 2')
-![screenshot of Indigo's shopping page, showing many listings and filters for them](./public/indigo-listings.png 'listings')
-![screenshot of Indigo's new listing form](./public/indigo-new-listing.png 'new listing')
-![screenshot of Indigo's login modal](./public/indigo-login.png 'log in')
-![screenshot of Indigo's sign up form](./public/indigo-signup.png 'sign up')
+![screenshot of Indigo's home page, part 1](https://i.imgur.com/HbgjXLo.png)
+![screenshot of Indigo's home page, part 1](https://i.imgur.com/empyegQ.png)
+![screenshot of Indigo's shopping page, showing many listings and filters for them](https://i.imgur.com/zjqyQo1.png)
+![screenshot of Indigo's new listing form](https://i.imgur.com/il30ZHy.png)
+![screenshot of Indigo's login modal](https://i.imgur.com/XeJCIca.png)
+![screenshot of Indigo's sign up form](https://i.imgur.com/w2evOpy.png)
 
 ## Technologies
 
