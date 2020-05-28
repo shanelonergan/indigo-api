@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   resources :conditions
   resources :brands
   resources :origins

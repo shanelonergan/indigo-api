@@ -1,9 +1,15 @@
 # ==> SEEDS <==
 
+Favorite.destroy_all
+Listing.destroy_all
 User.destroy_all
 Transaction.destroy_all
-Listing.destroy_all
 Brand.destroy_all
+Category.destroy_all
+Mill.destroy_all
+Condition.destroy_all
+Wash.destroy_all
+
 
 # ==> Brands <==
 
@@ -135,6 +141,20 @@ amy = User.create(
     username: "Amy",
     email: "aroweintraub@gmail.com",
     location: "New York"
+)
+
+l1 = Listing.create(
+    name: 'Fantastic Selvedge Vintage Levi\'s',
+    brand_id: levis.id,
+    category_id: pants.id,
+    condition_id: used.id,
+    wash_id: mid.id,
+    mill_id: cone.id,
+    waist: 30,
+    length: 32,
+    weight: 13,
+    price: 240,
+    description: 'Beautiful vintage levis, made with famed Cone Mills selvedge denim. Word in beautifully over the years, but still in greate condition. Rare find!'
 )
 
 
