@@ -143,18 +143,106 @@ amy = User.create(
     location: "New York"
 )
 
+# <== Listings and Photos ==>
+
 l1 = Listing.create(
     name: 'Fantastic Selvedge Vintage Levi\'s',
+    user_id: shane.id,
     brand_id: levis.id,
     category_id: pants.id,
     condition_id: used.id,
     wash_id: mid.id,
     mill_id: cone.id,
-    waist: 30,
-    length: 32,
+    waist: 33,
+    length: 36,
     weight: 13,
     price: 240,
-    description: 'Beautiful vintage levis, made with famed Cone Mills selvedge denim. Word in beautifully over the years, but still in greate condition. Rare find!'
+    description: 'Beautiful vintage Levi\'s 501s, made with famed Cone Mills selvedge denim. Word in beautifully over the years, but still in greate condition. Rare find!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/N9kRJjV',
+    listing_id: l1.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/CeVoOwL',
+    listing_id: l1.id
+)
+
+l2 = Listing.create(
+    name: 'Brand New APC Jeans',
+    user_id: shane.id,
+    brand_id: apc.id,
+    category_id: pants.id,
+    condition_id: neverworn.id,
+    wash_id: dark.id,
+    mill_id: candiani.id,
+    waist: 30,
+    length: 32,
+    weight: 12,
+    price: 80,
+    description: 'New, never word APC Petit New Standards. These are great italian selvedge jeans in a modern slim fit. Great deal!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/uM1jYjK',
+    listing_id: l2.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/yL7rvab',
+    listing_id: l2.id
+)
+
+l3 = Listing.create(
+    name: 'Gently Used Acne Jeans',
+    user_id: sukrit.id,
+    brand_id: acne.id,
+    category_id: pants.id,
+    condition_id: gently.id,
+    wash_id: black.id,
+    mill_id: collect.id,
+    waist: 30,
+    length: 34,
+    weight: 11,
+    price: 100,
+    description: 'Gently used grey/washed black Acne jeans. These are a great pair of staple denim, I just got them in the wrong size by mistake. My loss is your gain!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/uM1jYjK',
+    listing_id: l3.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/JlgejMA',
+    listing_id: l3.id
+)
+
+l4 = Listing.create(
+    name: 'Sick Railcar Heavy Jeans',
+    user_id: matt.id,
+    brand_id: railcar.id,
+    category_id: pants.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: kuroki.id,
+    waist: 31,
+    length: 32,
+    weight: 20,
+    price: 100,
+    description: 'Insane 20oz selvege denim from the #1 denim mill in the world, Kuroki Mills. These jeans will literally last forever, and only look better with age. These are made to order by Railcar, so they are very rare to find.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/uM1jYjK',
+    listing_id: l3.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/JlgejMA',
+    listing_id: l3.id
 )
 
 
