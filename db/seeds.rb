@@ -407,6 +407,738 @@ Photo.create(
     listing_id: l10.id
 )
 
+l11 = Listing.create(
+    name: 'Classic Denim Trucker Jacket',
+    user_id: shane.id,
+    brand_id: levis.id,
+    category_id: jackets.id,
+    condition_id: used.id,
+    wash_id: light.id,
+    mill_id: cone.id,
+    size: 'medium',
+    weight: 11,
+    price: 40,
+    description: 'Classic Levi\'s denim jacket. A true staple in great condition.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/5H5cdp7',
+    listing_id: l11.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/xHCxHX6',
+    listing_id: l11.id
+)
+
+l12 = Listing.create(
+    name: 'Beautiful A.P.C Denim Jacket',
+    user_id: shane.id,
+    brand_id: apc.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: candiani.id,
+    size: 'small',
+    weight: 14.5,
+    price: 150,
+    description: 'Awesome heavy selvedge type II jacket from A.P.C. Great boxy fit, this jacket is extremely well made. Only word a handful of times. Retails for $300.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/ulbr36c',
+    listing_id: l12.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/lABJPbN',
+    listing_id: l12.id
+)
+
+l13 = Listing.create(
+    name: 'New Acne Studios Denim Jacket',
+    user_id: sukrit.id,
+    brand_id: acne.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: mid.id,
+    mill_id: kuroki.id,
+    size: 'large',
+    weight: 12,
+    price: 100,
+    description: 'Great Acne jacket. Perfect color, boxy fit, great condition. This is a steal!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/2DKqSGc',
+    listing_id: l13.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/2DKqSGc',
+    listing_id: l13.id
+)
+
+l14 = Listing.create(
+    name: 'Black Denim Jacket',
+    user_id: sukrit.id,
+    brand_id: nudie.id,
+    category_id: jackets.id,
+    condition_id: neverworn.id,
+    wash_id: black.id,
+    mill_id: amhot.id,
+    size: 'large',
+    weight: 12,
+    price: 100,
+    description: 'Brand new black denim jacket from Nudie Jeans. This is a super dark black, great looking jacket!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/aX5dWYG',
+    listing_id: l14.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/lR8Fj6P',
+    listing_id: l14.id
+)
+
+l15 = Listing.create(
+    name: 'Railcar Denim Chore Coat',
+    user_id: shane.id,
+    brand_id: railcar.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: collect.id,
+    size: 'medium',
+    weight: 13,
+    price: 175,
+    description: 'Incredible chore coat hand-made in NYC by Railcar. Made with sick 13oz Japanesee red-line selvedge denim, this is an awesome find. Worn less than 10 times.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/1Tc2Qpa',
+    listing_id: l15.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/Ft3Ev9r',
+    listing_id: l15.id
+)
+
+l16 = Listing.create(
+    name: 'Classic Denim Trucker Jacket',
+    user_id: shane.id,
+    brand_id: levis.id,
+    category_id: jackets.id,
+    condition_id: used.id,
+    wash_id: light.id,
+    mill_id: cone.id,
+    size: 'medium',
+    weight: 11,
+    price: 40,
+    description: 'Classic Levi\'s denim jacket. A true staple in great condition.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/5H5cdp7',
+    listing_id: l16.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/xHCxHX6',
+    listing_id: l16.id
+)
+
+l17 = Listing.create(
+    name: 'Beautiful A.P.C Denim Jacket',
+    user_id: shane.id,
+    brand_id: apc.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: candiani.id,
+    size: 'small',
+    weight: 14.5,
+    price: 150,
+    description: 'Awesome heavy selvedge type II jacket from A.P.C. Great boxy fit, this jacket is extremely well made. Only word a handful of times. Retails for $300.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/ulbr36c',
+    listing_id: l17.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/lABJPbN',
+    listing_id: l17.id
+)
+
+l18 = Listing.create(
+    name: 'New Acne Studios Denim Jacket',
+    user_id: sukrit.id,
+    brand_id: acne.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: mid.id,
+    mill_id: kuroki.id,
+    size: 'large',
+    weight: 12,
+    price: 100,
+    description: 'Great Acne jacket. Perfect color, boxy fit, great condition. This is a steal!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/2DKqSGc',
+    listing_id: l18.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/2DKqSGc',
+    listing_id: l18.id
+)
+
+l19 = Listing.create(
+    name: 'Black Denim Jacket',
+    user_id: sukrit.id,
+    brand_id: nudie.id,
+    category_id: jackets.id,
+    condition_id: neverworn.id,
+    wash_id: black.id,
+    mill_id: amhot.id,
+    size: 'large',
+    weight: 12,
+    price: 100,
+    description: 'Brand new black denim jacket from Nudie Jeans. This is a super dark black, great looking jacket!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/aX5dWYG',
+    listing_id: l19.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/lR8Fj6P',
+    listing_id: l19.id
+)
+
+l20 = Listing.create(
+    name: 'Railcar Denim Chore Coat',
+    user_id: shane.id,
+    brand_id: railcar.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: collect.id,
+    size: 'medium',
+    weight: 13,
+    price: 175,
+    description: 'Incredible chore coat hand-made in NYC by Railcar. Made with sick 13oz Japanesee red-line selvedge denim, this is an awesome find. Worn less than 10 times.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/1Tc2Qpa',
+    listing_id: l20.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/Ft3Ev9r',
+    listing_id: l20.id
+)
+
+# Double it
+
+l21 = Listing.create(
+    name: 'Fantastic Selvedge Vintage Levi\'s',
+    user_id: shane.id,
+    brand_id: levis.id,
+    category_id: pants.id,
+    condition_id: used.id,
+    wash_id: mid.id,
+    mill_id: cone.id,
+    waist: 33,
+    length: 36,
+    weight: 13,
+    price: 240,
+    description: 'Beautiful vintage Levi\'s 501s, made with famed Cone Mills selvedge denim. Word in beautifully over the years, but still in greate condition. Rare find!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/N9kRJjV',
+    listing_id: l21.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/CeVoOwL',
+    listing_id: l21.id
+)
+
+l22 = Listing.create(
+    name: 'Brand New APC Jeans',
+    user_id: shane.id,
+    brand_id: apc.id,
+    category_id: pants.id,
+    condition_id: neverworn.id,
+    wash_id: dark.id,
+    mill_id: candiani.id,
+    waist: 30,
+    length: 32,
+    weight: 12,
+    price: 80,
+    description: 'New, never word APC Petit New Standards. These are great italian selvedge jeans in a modern slim fit. Great deal!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/uM1jYjK',
+    listing_id: l22.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/yL7rvab',
+    listing_id: l22.id
+)
+
+l23 = Listing.create(
+    name: 'Gently Used Acne Jeans',
+    user_id: sukrit.id,
+    brand_id: acne.id,
+    category_id: pants.id,
+    condition_id: gently.id,
+    wash_id: black.id,
+    mill_id: collect.id,
+    waist: 30,
+    length: 34,
+    weight: 11,
+    price: 100,
+    description: 'Gently used grey/washed black Acne jeans. These are a great pair of staple denim, I just got them in the wrong size by mistake. My loss is your gain!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/uM1jYjK',
+    listing_id: l23.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/JlgejMA',
+    listing_id: l23.id
+)
+
+l24 = Listing.create(
+    name: 'Sick Railcar Heavy Jeans',
+    user_id: matt.id,
+    brand_id: railcar.id,
+    category_id: pants.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: kuroki.id,
+    waist: 31,
+    length: 32,
+    weight: 20,
+    price: 200,
+    description: 'Insane 20oz selvege denim from the #1 denim mill in the world, Kuroki Mills. These jeans will literally last forever, and only look better with age. These are made to order by Railcar, so they are very rare to find.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/wcb3gGH',
+    listing_id: l24.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/7h6TLBp',
+    listing_id: l24.id
+)
+
+l25 = Listing.create(
+    name: 'Used Nudie Jeans',
+    user_id: shane.id,
+    brand_id: nudie.id,
+    category_id: pants.id,
+    condition_id: used.id,
+    wash_id: light.id,
+    mill_id: amhot.id,
+    waist: 30,
+    length: 32,
+    weight: 11,
+    price: 50,
+    description: 'Well-loved Nudie Jeans. These are super comfortable, everday-wear jeans. Still plenty of life left in them!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/ixnsvzJ',
+    listing_id: l25.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/ixnsvzJ',
+    listing_id: l25.id
+)
+
+l26 = Listing.create(
+    name: 'Fantastic Selvedge Vintage Levi\'s',
+    user_id: shane.id,
+    brand_id: levis.id,
+    category_id: pants.id,
+    condition_id: used.id,
+    wash_id: mid.id,
+    mill_id: cone.id,
+    waist: 33,
+    length: 36,
+    weight: 13,
+    price: 240,
+    description: 'Beautiful vintage Levi\'s 501s, made with famed Cone Mills selvedge denim. Word in beautifully over the years, but still in greate condition. Rare find!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/N9kRJjV',
+    listing_id: l26.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/CeVoOwL',
+    listing_id: l26.id
+)
+
+l27 = Listing.create(
+    name: 'Brand New APC Jeans',
+    user_id: shane.id,
+    brand_id: apc.id,
+    category_id: pants.id,
+    condition_id: neverworn.id,
+    wash_id: dark.id,
+    mill_id: candiani.id,
+    waist: 30,
+    length: 32,
+    weight: 12,
+    price: 80,
+    description: 'New, never word APC Petit New Standards. These are great italian selvedge jeans in a modern slim fit. Great deal!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/uM1jYjK',
+    listing_id: l27.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/yL7rvab',
+    listing_id: l27.id
+)
+
+l28 = Listing.create(
+    name: 'Gently Used Acne Jeans',
+    user_id: sukrit.id,
+    brand_id: acne.id,
+    category_id: pants.id,
+    condition_id: gently.id,
+    wash_id: black.id,
+    mill_id: collect.id,
+    waist: 30,
+    length: 34,
+    weight: 11,
+    price: 100,
+    description: 'Gently used grey/washed black Acne jeans. These are a great pair of staple denim, I just got them in the wrong size by mistake. My loss is your gain!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/uM1jYjK',
+    listing_id: l28.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/JlgejMA',
+    listing_id: l28.id
+)
+
+l29 = Listing.create(
+    name: 'Sick Railcar Heavy Jeans',
+    user_id: matt.id,
+    brand_id: railcar.id,
+    category_id: pants.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: kuroki.id,
+    waist: 31,
+    length: 32,
+    weight: 20,
+    price: 200,
+    description: 'Insane 20oz selvege denim from the #1 denim mill in the world, Kuroki Mills. These jeans will literally last forever, and only look better with age. These are made to order by Railcar, so they are very rare to find.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/wcb3gGH',
+    listing_id: l29.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/7h6TLBp',
+    listing_id: l29.id
+)
+
+l30 = Listing.create(
+    name: 'Used Nudie Jeans',
+    user_id: shane.id,
+    brand_id: nudie.id,
+    category_id: pants.id,
+    condition_id: used.id,
+    wash_id: light.id,
+    mill_id: amhot.id,
+    waist: 30,
+    length: 32,
+    weight: 11,
+    price: 50,
+    description: 'Well-loved Nudie Jeans. These are super comfortable, everday-wear jeans. Still plenty of life left in them!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/ixnsvzJ',
+    listing_id: l30.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/ixnsvzJ',
+    listing_id: l30.id
+)
+
+l31 = Listing.create(
+    name: 'Classic Denim Trucker Jacket',
+    user_id: shane.id,
+    brand_id: levis.id,
+    category_id: jackets.id,
+    condition_id: used.id,
+    wash_id: light.id,
+    mill_id: cone.id,
+    size: 'medium',
+    weight: 11,
+    price: 40,
+    description: 'Classic Levi\'s denim jacket. A true staple in great condition.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/5H5cdp7',
+    listing_id: l31.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/xHCxHX6',
+    listing_id: l31.id
+)
+
+l32 = Listing.create(
+    name: 'Beautiful A.P.C Denim Jacket',
+    user_id: shane.id,
+    brand_id: apc.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: candiani.id,
+    size: 'small',
+    weight: 14.5,
+    price: 150,
+    description: 'Awesome heavy selvedge type II jacket from A.P.C. Great boxy fit, this jacket is extremely well made. Only word a handful of times. Retails for $300.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/ulbr36c',
+    listing_id: l32.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/lABJPbN',
+    listing_id: l32.id
+)
+
+l33 = Listing.create(
+    name: 'New Acne Studios Denim Jacket',
+    user_id: sukrit.id,
+    brand_id: acne.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: mid.id,
+    mill_id: kuroki.id,
+    size: 'large',
+    weight: 12,
+    price: 100,
+    description: 'Great Acne jacket. Perfect color, boxy fit, great condition. This is a steal!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/2DKqSGc',
+    listing_id: l33.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/2DKqSGc',
+    listing_id: l33.id
+)
+
+l34 = Listing.create(
+    name: 'Black Denim Jacket',
+    user_id: sukrit.id,
+    brand_id: nudie.id,
+    category_id: jackets.id,
+    condition_id: neverworn.id,
+    wash_id: black.id,
+    mill_id: amhot.id,
+    size: 'large',
+    weight: 12,
+    price: 100,
+    description: 'Brand new black denim jacket from Nudie Jeans. This is a super dark black, great looking jacket!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/aX5dWYG',
+    listing_id: l34.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/lR8Fj6P',
+    listing_id: l34.id
+)
+
+l35 = Listing.create(
+    name: 'Railcar Denim Chore Coat',
+    user_id: shane.id,
+    brand_id: railcar.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: collect.id,
+    size: 'medium',
+    weight: 13,
+    price: 175,
+    description: 'Incredible chore coat hand-made in NYC by Railcar. Made with sick 13oz Japanesee red-line selvedge denim, this is an awesome find. Worn less than 10 times.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/1Tc2Qpa',
+    listing_id: l35.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/Ft3Ev9r',
+    listing_id: l35.id
+)
+
+l36 = Listing.create(
+    name: 'Classic Denim Trucker Jacket',
+    user_id: shane.id,
+    brand_id: levis.id,
+    category_id: jackets.id,
+    condition_id: used.id,
+    wash_id: light.id,
+    mill_id: cone.id,
+    size: 'medium',
+    weight: 11,
+    price: 40,
+    description: 'Classic Levi\'s denim jacket. A true staple in great condition.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/5H5cdp7',
+    listing_id: l36.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/xHCxHX6',
+    listing_id: l36.id
+)
+
+l37 = Listing.create(
+    name: 'Beautiful A.P.C Denim Jacket',
+    user_id: shane.id,
+    brand_id: apc.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: candiani.id,
+    size: 'small',
+    weight: 14.5,
+    price: 150,
+    description: 'Awesome heavy selvedge type II jacket from A.P.C. Great boxy fit, this jacket is extremely well made. Only word a handful of times. Retails for $300.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/ulbr36c',
+    listing_id: l37.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/lABJPbN',
+    listing_id: l37.id
+)
+
+l38 = Listing.create(
+    name: 'New Acne Studios Denim Jacket',
+    user_id: sukrit.id,
+    brand_id: acne.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: mid.id,
+    mill_id: kuroki.id,
+    size: 'large',
+    weight: 12,
+    price: 100,
+    description: 'Great Acne jacket. Perfect color, boxy fit, great condition. This is a steal!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/2DKqSGc',
+    listing_id: l38.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/2DKqSGc',
+    listing_id: l38.id
+)
+
+l39 = Listing.create(
+    name: 'Black Denim Jacket',
+    user_id: sukrit.id,
+    brand_id: nudie.id,
+    category_id: jackets.id,
+    condition_id: neverworn.id,
+    wash_id: black.id,
+    mill_id: amhot.id,
+    size: 'large',
+    weight: 12,
+    price: 100,
+    description: 'Brand new black denim jacket from Nudie Jeans. This is a super dark black, great looking jacket!'
+)
+
+Photo.create(
+    url: 'https://imgur.com/aX5dWYG',
+    listing_id: l39.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/lR8Fj6P',
+    listing_id: l39.id
+)
+
+l40 = Listing.create(
+    name: 'Railcar Denim Chore Coat',
+    user_id: shane.id,
+    brand_id: railcar.id,
+    category_id: jackets.id,
+    condition_id: gently.id,
+    wash_id: dark.id,
+    mill_id: collect.id,
+    size: 'medium',
+    weight: 13,
+    price: 175,
+    description: 'Incredible chore coat hand-made in NYC by Railcar. Made with sick 13oz Japanesee red-line selvedge denim, this is an awesome find. Worn less than 10 times.'
+)
+
+Photo.create(
+    url: 'https://imgur.com/1Tc2Qpa',
+    listing_id: l40.id
+)
+
+Photo.create(
+    url: 'https://imgur.com/Ft3Ev9r',
+    listing_id: l40.id
+)
+
 
 puts "👖 👖 👖 👖 👖 👖 👖 👖 👖"
 
