@@ -12,6 +12,16 @@ Inspired by applications like Grailed and Poshmark, Indigo aims to cater exclusi
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/398cc6de-3a0b-4275-9a76-2dba030a0d30/deploy-status)](https://app.netlify.com/sites/indigo-deployment/deploys) ![Heroku](https://heroku-badge.herokuapp.com/?app=indigo-api-deployment&root=/users)
 
+## Demos
+
+### Gif
+
+![Gif Demo](https://media.giphy.com/media/XAxhTIvKIEA987chtR/giphy.gif)
+
+### Video
+
+[![Video Demo](https://i.imgur.com/HRHJS6V.jpg)](https://www.youtube.com/watch?v=W4KKA4i4Tm0&feature=youtu.be)
+
 ## Screenshots
 
 ![screenshot of Indigo's home page, part 1]('https://i.imgur.com/AocjC2D.png')
